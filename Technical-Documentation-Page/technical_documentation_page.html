@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<link href="./resources/CSS/technical_documentatin_page.css" type="text/css" rel="stylesheet">
+
+<html>
+    <head>
+        <title>Python Technical Documentation</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Python Technical Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#python_basics">Python Basics</a></li>
+                <li><a class="nav-link" href="#flow_control_tools">Flow Control Tools</a></li>
+                <li><a class="nav-link" href="#data_structures">Data Structures</a></li>
+                <li><a class="nav-link" href="#references">References</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+                    <p>This tutorial introduces the reader informally to the basic concepts and features of the Python language and system. It helps to have a Python interpreter handy for hands-on experience, but all examples are self-contained, so the tutorial can be read off-line as well.</p>
+                    <p>Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer. On the other hand, Python also offers much more error checking than C, and, being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries. Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages.</p>
+                    <p>Python allows you to split your program into modules that can be reused in other Python programs. It comes with a large collection of standard modules that you can use as the basis of your programs — or as examples to start learning to program in Python. Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.</p>
+                    <p>Python can be used for many applications, such as:</p>
+                    <ul>
+                        <li>Python offers many choices for web development, as frameworks as Django.</li>
+                        <li>Python's standard library supports many Internet protocols, as HTML and XML.</li>
+                        <li>Python is widely used in scientific and numeric computing.</li>
+                        <li>Python is often used as a support language for software developers, for build control and management, testing, and in many other ways.</li>
+                        <li>Python is also used to build ERP and e-commerce systems.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="python_basics">
+                <header>Python Basics</header>
+                <article>
+                    <p>The first steps that we can do in Python are:</p>
+                    <ul>
+                        <li>"Hello, world"</li>
+                        <li>Values</li>
+                    </ul>
+                </article>
+                <article>
+                    <p>The first program that we can do is the famous script "Hello world" which all it does is display the words "Hello, world". In Python, it looks like this:</p>
+                    <code> >>> print("Hello, world")</code>
+                    <p>This is a simple example of the functioning of the print statement. So it would appear on the screen:</p>
+                    <code> Hello, world</code>
+                    <p>On the other hand, we have to learn about the value of variables. A value is one of the basic things a program works with.</p>
+                    <p>As a number like 2 is an integer, 42.0 is a float number, or the "Hello, world" is a string. If we are not sure what type a value has, we can consult using the "type( )" method.</p>
+                </article>
+            </section>
+            <section class="main-section" id="flow_control_tools">
+                <header>Flow Control Tools</header>
+                <article>
+                    <p>There are several flow control tools:</p>
+                    <ul>
+                        <li>If...else</li>
+                        <li>For loops</li>
+                        <li>While loops</li>
+                    </ul>
+                    <p>The first type are the conditional "if else". It does work with a condition, if the condition is met the flow of the program enter in the "if" and if its not, it enters in the else part.</p>
+                    <code> >>> if(condition): </code>
+                    <code> >>>  ...</code>
+                    <code> >>> else:</code>
+                    <code> >>>  ...</code>
+                    <p>For loops consist that the program flow enter in the loop and it stays there until the condition finish.</p>
+                    <code> >>> fruits=["apple","banana","cherry"]</code>
+                    <code> >>> for x in fruits:</code>
+                    <code> >>>  print(x)</code>
+                    <p>Output:</p>
+                    <code> apple</code>
+                    <code> banana</code>
+                    <code> cherry</code>
+                    <p>The last option, while loops, are similar to for loops, but when the loop condition is not met, it automatically exits.</p>
+                    <code> >>> i = 1</code>
+                    <code> >>> while i < 6:</code>
+                    <code> >>>  print(i)</code>
+                    <code> >>>  i += 1</code>
+                </article>
+            </section>
+            <section class="main-section" id="data_structures">
+                <header>Data Structures</header>
+                <article>
+                    <p>Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result</p>
+                    <code> 'Hello, world'</code>
+                    <code> "Hello, wordl"</code>
+                    <p>Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
+                    <code> >>> numb=[1,2,3,4,5]</code>
+                    <code> >>> print(numb)</code>
+                    <code> [1,2,3,4,5]</code>
+                </article>
+            </section>
+            <section class="main-section" id="references">
+                <header>References</header>
+                <article>
+                    <ul>
+                        <li>All the information is taken from <a href="https://docs.python.org/3/tutorial/" target="_blank">The Python Tutorial</a></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
