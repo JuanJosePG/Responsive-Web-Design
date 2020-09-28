@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<link href="./resources/CSS/survey_form.css" type="text/css" rel="stylesheet">
+
+<html>
+    <head>
+        <title>Survey Form - Tamisur Team</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="title-text-centered">Satisfaction Questionnaire</h1>
+                <p id="description" class="description-text-centered">Thank you for taking the time to help us improve our company.</p>
+                <p id="cite" class="cite-text-centered"> - Tamisur Team</p>               
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input name="name" type="text" id="name" placeholder="Enter your name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input name="email" type="email" id="email" placeholder="Enter your email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="age" id="number-label">Age</label>
+                    <input name="age" type="number" id="number" placeholder="Enter your age" class="form-input" min="0" max="99">
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role as client?</p>
+                    <select name="role" id="dropdown" class="form-input" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="private-customer">Private Customer</option>
+                        <option value="self-employed-entrepeneur">Self-employed Entrepeneur</option>
+                        <option value="company">Company</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend our company to friends?</p>
+                    <label><input name="user-recommend" type="radio" value="definitely" class="radio-input" checked>Definitely</label>
+                    <label><input name="user-recommend" type="radio" value="maybe" class="radio-input">Maybe</label>
+                    <label><input name="user-recommend" type="radio" value="of-course-not" class="radio-input">Of course not</label>
+                </div>
+                <div class="form-group">
+                    <p>What do you think is our strong point?</p>
+                    <label><input name="user-recommend" type="checkbox" value="puntuality" class="checkbox-input">Puntuality</label>
+                    <label><input name="user-recommend" type="checkbox" value="efficiency" class="checkbox-input">Efficiency</label>
+                    <label><input name="user-recommend" type="checkbox" value="customer-care" class="checkbox-input">Customer Care</label>
+                    <label><input name="user-recommend" type="checkbox" value="speed" class="checkbox-input">Speed</label>
+                    <label><input name="user-recommend" type="checkbox" value="prices" class="checkbox-input">Prices</label>
+                </div>
+                <div class="form-group">
+                    <p>Any suggestions or comments?</p>
+                    <textarea id="comments" class="textarea-input" name="textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
