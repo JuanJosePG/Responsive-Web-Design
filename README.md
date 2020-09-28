@@ -1,3 +1,6 @@
+#Responsive Web Design Certification
+##freeCodeCamp
+
 Course offered by FreeCodeCamp on responsive web design which represents approximately 300 hours of course.
 
 The course presents basic concepts about HTML, HTML5 and CSS. In addition, knowledge about Flexbox and Grids is taught.
