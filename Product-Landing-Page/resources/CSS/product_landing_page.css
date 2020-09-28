@@ -1,0 +1,378 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #1D3557;
+}
+
+.product-landing-page-body{
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #1D3557;
+}
+
+.container{
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid{
+    display: flex;
+
+}
+
+/* START: ----- HEADER + LOGO + NAV BAR ----- */
+header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 600px){
+    header{
+        flex-wrap: wrap;
+    }
+}
+
+.logo{
+    width: 60vw;
+}
+
+@media(max-width: 650px){
+    .logo{
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.logo > img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 650px){
+    .logo > img{
+        margin: 0 auto;
+    }
+}
+
+nav{
+    font-weight: 400;
+}
+
+@media (max-width: 650px){
+    nav{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+    }
+    
+    nav li{
+        padding-bottom: 5px;
+    }
+}
+
+nav > ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 50px;
+}
+
+@media (max-width: 650px){
+    nav > ul{
+        flex-direction: column;
+    }
+}
+
+.nav-link{
+    margin: 0 40px;
+    font-size: medium;
+    font-weight: 600;
+}
+/* END: ----- HEADER + LOGO + NAV BAR ----- */
+
+/* START: ----- FOOTER ----- */
+footer{
+    padding: 20px;
+    height: 80px;
+}
+
+footer > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 50px;
+}
+
+.footer-link{
+    margin: 0 40px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+footer > span{
+    margin: 10px 90px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+}
+/* END: ----- FOOTER ----- */
+
+/* START: ----- CONTAINER -----*/
+
+/* START: ----- TITLE ----- */
+.airlid-title{
+    font-size: xx-large;
+    margin-top: 125px;
+    text-align: center;
+}
+
+.airlid-title > h1{
+    line-height: 80px;
+    font-size: 105px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.airlid-title > h2{
+    width: 100%;
+    font-style: italic;
+    background: #1D3557;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+/* END: ----- TITLE ----- */
+
+/* START: ----- VIDEO-CONTENT ----- */
+#introduction-video{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 10px auto;
+}
+
+#introduction-video > iframe {
+    width: 1380px;
+    height: 775px;
+}
+/* END: ----- VIDEO-CONTENT ----- */
+
+/* START: ----- FEATURES ----- */
+#features{
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 675px 675px;
+    grid-row: auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+#features .description-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 675px;
+    height: 200px;
+    padding: 30px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #1D3557;
+}
+
+.description-feature > h2{
+    font-size: 2.5rem;
+    margin: 10px auto;
+    justify-content: flex-start;
+}
+
+.description-feature > p{
+    margin: 10px 70px;
+    text-align: center;
+}
+
+@media (max-width: 550px){
+    #features .description-feature{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 650px){
+    #features{
+        margin-top: 0;
+    }
+}
+/* END: ----- FEATURES ----- */
+
+/* START: ----- OFFERS ----- */
+#offer-title{
+    background: #1D3557;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 80px;
+    font-size: xx-large;
+    padding: 20px auto;
+    border-radius: 15px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+#offers{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc((100%-40px)/3);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #1D3557;
+}
+
+img{
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+#offer-name{
+    background: #1D3557;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.product > h3{
+    font-size: 15px;
+}
+
+#price{
+    font-size: 35px;
+}
+
+.product > ul{
+    margin: 15px 0;
+}
+
+.product > ul > li{
+    padding: 5px 0;
+    text-align: justify;
+}
+
+.product > .button-offer{
+    border: 0;
+    margin: 15px 0;
+    background-color: #1D3557;
+    line-height: 40px;
+    font-size: 25px;
+    width: 60%;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.product > .button-offer:hover{
+    background-color: #E63946;
+    transition: background-color 0.25s;
+}
+
+@media (max-width: 800px){
+    #offers{
+        flex-direction: column;
+    }
+
+    .product{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+/* END: ----- OFFERS ----- */
+
+/* START: ----- SUBMIT ----- */
+#submit-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    margin: 75px auto;
+}
+
+#submit-section > h2{
+    font-size: 23px;
+    margin: 20px auto;
+}
+
+#submit-section input[type="email"]{
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+#submit-section input[type="submit"]{
+    border: 0;
+    margin: 15px 0;
+    background-color: #1D3557;
+    line-height: 40px;
+    font-size: 25px;
+    width: 100%;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#submit-section input[type="submit"]:hover{
+    background-color: #E63946;
+    transition: background-color 0.25s;
+}
+/* END: ----- SUBMIT ----- */
+
+/* END: ----- CONTAINER -----*/
